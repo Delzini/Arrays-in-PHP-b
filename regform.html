@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <center>
+      <form action="user_data.php" method="post">
+        <table border="" style="width: 500px; height: 200px">
+          <thead>
+            <th style="height: 30px; width: 300px" colspan="2">
+              Registration Form
+            </th>
+          </thead>
+          <tr>
+            <td>
+              <label for="fname"
+                >First Name :<sup style="color: red">*</sup></label
+              >
+            </td>
+            <td>
+              <input
+                style="height: 30px; width: 300px"
+                type="text"
+                name="fname"
+                id=""
+                placeholder="John"
+                required
+              />
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <label for="lname"
+                >Last Name :<sup style="color: red">*</sup></label
+              >
+            </td>
+            <td>
+              <input
+                style="height: 30px; width: 300px"
+                type="text"
+                name="lname"
+                id=""
+                placeholder="Smith"
+                required
+              />
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <label for="email">Email :<sup style="color: red">*</sup></label>
+            </td>
+            <td>
+              <input
+                style="height: 30px; width: 300px"
+                type="email"
+                name="email"
+                id=""
+                placeholder="smith.john@gmail.com"
+                required
+              />
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <label for="dob">DOB : <sup style="color: red">*</sup></label>
+            </td>
+            <td>
+              <input
+                style="height: 30px; width: 300px"
+                type="date"
+                name="dob"
+                id=""
+                placeholder="05/25/1993"
+                required
+              />
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <label for="sex">Gender : <sup style="color: red">*</sup></label>
+            </td>
+            <td style="height: 30px; width: 300px">
+              <input type="radio" name="sex" value="Male" id="" checked /> Male
+              <input type="radio" name="sex" value="Female" id="" />Female
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <label for="country"
+                >Country :<sup style="color: red">*</sup></label
+              >
+            </td>
+            <td>
+              <select name="country" id="" style="height: 30px; width: 300px">
+                <option value="Nigeria" selected>select</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Congo">Congo</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="">Kenya</option>
+                <option value="Sierra">Sierra Leone</option>
+                <option value="Libya">Libya</option>
+                <option value="Togo">Togo</option>
+                <option value="Cameroun">Cameroun</option>
+              </select>
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td
+              style="height: 30px; width: 300px; padding-left: 250px"
+              colspan="2"
+            >
+              <input type="submit" name="Register" value="Register" />
+            </td>
+          </tr>
+        </table>
+      </form>
+
+      <?php include 'regform.php'; ?>
+    </center>
+  </body>
+</html>
